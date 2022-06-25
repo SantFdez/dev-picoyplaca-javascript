@@ -14,21 +14,21 @@ describe('validateVehiclePyP Tests', () => {
         let veh = new Vehicle('PXX-9651');
         const date = '2022-06-30';
         const time = '18:00';
-        expect(ant.validateVehiclePyP(veh, date, time)).toBeTruly();
+        expect(ant.validateVehiclePyP(veh, date, time)).toBeTruthy();
 
     }); 
     test('Plate ABH-1112', () => {
         let veh = new Vehicle('ABH-1112');
         const date = '2022-06-16';
         const time = '8:00';
-        expect(ant.validateVehiclePyP(veh, date, time)).toBeTruly();
+        expect(ant.validateVehiclePyP(veh, date, time)).toBeTruthy();
 
     }); 
     test('Plate PPP-3533', () => {
         let veh = new Vehicle('PPP-3533');
         const date = '2022-06-29';
         const time = '18:00';
-        expect(ant.validateVehiclePyP(veh, date, time)).toBeTruly();
+        expect(ant.validateVehiclePyP(veh, date, time)).toBeTruthy();
 
     }); 
     test('Plate AAX-2424', () => {
@@ -49,21 +49,21 @@ describe('validateVehiclePyP Tests', () => {
         let veh = new Vehicle('PAB-9856');
         const date = '2022-06-16';
         const time = '18:00';
-        expect(ant.validateVehiclePyP(veh, date, time)).toBeTruly();
+        expect(ant.validateVehiclePyP(veh, date, time)).toBeTruthy();
 
     }); 
     test('Plate PBB-7777', () => {
         let veh = new Vehicle('PBB-7777');
         const date = '2022-06-26';
         const time = '18:00';
-        expect(ant.validateVehiclePyP(veh, date, time)).toBeTruly();
+        expect(ant.validateVehiclePyP(veh, date, time)).toBeTruthy();
 
     }); 
     test('Plate PBY-8888', () => {
         let veh = new Vehicle('PBY-8888');
         const date = '2022-06-19';
         const time = '18:00';
-        expect(ant.validateVehiclePyP(veh, date, time)).toBeTruly();
+        expect(ant.validateVehiclePyP(veh, date, time)).toBeTruthy();
 
     }); 
     test('Plate PYZ-9859', () => {
@@ -77,7 +77,7 @@ describe('validateVehiclePyP Tests', () => {
         let veh = new Vehicle('PBX-2820');
         const date = '2022-06-29';
         const time = '18:00';
-        expect(ant.validateVehiclePyP(veh, date, time)).toBeTruly();
+        expect(ant.validateVehiclePyP(veh, date, time)).toBeTruthy();
 
     }); 
 })
