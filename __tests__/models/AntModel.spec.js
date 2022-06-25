@@ -8,7 +8,7 @@ describe('validateVehiclePyP Tests', () => {
         let veh = new Vehicle('PBX-1820');
         const date = '2022-06-25';
         const time = '18:00';
-        expect(ant.validateVehiclePyP(veh, date, time)).toBeFalsy();
+        expect(ant.validateVehiclePyP(veh, date, time)).toBeTruthy();
     }); 
     test('Plate PXX-9651', () => {
         let veh = new Vehicle('PXX-9651');
@@ -20,7 +20,7 @@ describe('validateVehiclePyP Tests', () => {
     test('Plate ABH-1112', () => {
         let veh = new Vehicle('ABH-1112');
         const date = '2022-06-16';
-        const time = '8:00';
+        const time = '08:00';
         expect(ant.validateVehiclePyP(veh, date, time)).toBeTruthy();
 
     }); 
@@ -41,7 +41,7 @@ describe('validateVehiclePyP Tests', () => {
     test('Plate ABA-5595', () => {
         let veh = new Vehicle('ABA-5595');
         const date = '2022-06-29';
-        const time = '8:00';
+        const time = '08:00';
         expect(ant.validateVehiclePyP(veh, date, time)).toBeFalsy();
 
     }); 
@@ -70,7 +70,7 @@ describe('validateVehiclePyP Tests', () => {
         let veh = new Vehicle('PYZ-9859');
         const date = '2022-06-27';
         const time = '18:00';
-        expect(ant.validateVehiclePyP(veh, date, time)).toBeFalsy();
+        expect(ant.validateVehiclePyP(veh, date, time)).toBeTruthy();
 
     }); 
     test('Plate PBX-2820', () => {
@@ -80,4 +80,20 @@ describe('validateVehiclePyP Tests', () => {
         expect(ant.validateVehiclePyP(veh, date, time)).toBeTruthy();
 
     }); 
+    test('Plate PBX-0233', () => {
+        let veh = new Vehicle('PBX-0233');
+        const date = '2022-06-28';
+        const time = '18:00';
+        expect(ant.validateVehiclePyP(veh, date, time)).toBeFalsy();
+
+    }); 
+
+    test('Plate PBX-0233', () => {
+        let veh = new Vehicle('PBX-0233');
+        const date = '2022-06-28';
+        const time = '04:00';
+        expect(ant.validateVehiclePyP(veh, date, time)).toBeTruthy();
+
+    }); 
+
 })
