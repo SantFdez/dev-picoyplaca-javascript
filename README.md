@@ -4,7 +4,7 @@ This project aims to say if a certain vehicle can be on road in a certain date a
 
 This project has two ways of use it: as an API, or as a Full-Stack project. You will be guided through both forms in the sections bellow.
 
-This project is deployed at Heroku platform, you will find it [here](https://dev-picoyplaca-javascript.herokuapp.com/)
+This project is deployed at Heroku platform, you will find it [here](https://dev-picoyplaca-javascript.herokuapp.com/).
 
 
 
