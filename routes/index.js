@@ -1,8 +1,15 @@
-import express, { application } from 'express';
-import {validateVehiclePyP} from '../controllers/AntController.js'
+import express from 'express';
+import {validateVehicleGet} from '../controllers/AntController.js'
+import {validateVehicleApi} from '../controllers/AntControllerApi.js'
 
 const router = express.Router();
 
-router.post('/validate', validateVehiclePyP);
+router.get('/', (req, res) => {
+    res.render('home');
+});
+
+router.post('/result', validateVehicleGet);
+
+router.post('/api/validate', validateVehicleApi);
 
 export default router;
