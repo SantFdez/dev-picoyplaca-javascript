@@ -1,21 +1,22 @@
 # Pico y Placa Project
 
-This project aims to say if a certain vehicle can be on road in a certain date and time. This Pico y Placa laws are based on June 2022 rules.
+This project aims to say if a certain vehicle can be on road in a certain date and time. This "Pico y Placa" laws were based on June 2022 rules.
 
-This project has two ways of use it: as a API, or as a Full-Stack project. You will be guided through both forms in the sections bellow.
+This project has two ways of use it: as an API, or as a Full-Stack project. You will be guided through both forms in the sections bellow.
 
 
 
-# Understanding data
+## Understanding data
 
-This section will provide you information about the data used as input, and responses you will get of this API.
-Input data required:
+This section will provide you information about the data used as input as well as the responses you will get of this App.
+
+### Input data required:
 
 - _Vehicle plate_
 - _Date_
 - _Time_
 
-Output data:
+### Output data:
 
 - _If the car can be on road_
 
@@ -53,7 +54,7 @@ There are two options to run the tests
 
 ### Run the application
 
-Run the application which will be listening on port `4000`. Run the application.
+Run the application which will be listening on port `4000`.
 
 - Run the application 
 
@@ -63,12 +64,12 @@ Run the application which will be listening on port `4000`. Run the application.
 
 ### Test Full-Stack App
 
-One you are running the application, you can open the server with any web browser at `localhost:4000` . The App will show you a simple form. Fill the information keeping the established format and see if that specific vehicle given can be on road.
+One you are running the application, you can open the server with any web browser at `localhost:4000` . The App will show you a simple form. Fill the information keeping the established format and see if that specific given vehicle can be on road.
 
 
 ## API
 
-Below is a list of API endpoints with their respective input and output. Please note that the application needs to be
+Below is the API endpoint with their respective input and output. Please note that the application needs to be
 running for the following endpoints to work. For more information about how to run the application, please refer
 to [run the application](#run-the-application) section above.
 
@@ -122,4 +123,8 @@ Example output
     "response": true
 }
 ```
+
+## Questions
+
+If you have any doubt or question do not hesitate to contact me at `sannt43@gmail.com`.
 
