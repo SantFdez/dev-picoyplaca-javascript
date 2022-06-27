@@ -8,7 +8,6 @@ class Ant {
      * @param  {string} plate identification for vehicle
      */
      constructor() {
-        /** @private */
         this.pyp_laws = [
             [], 
             ["1","2"],
@@ -20,31 +19,36 @@ class Ant {
         ];
 
         this.pyp_schedule = [
-            ['05:00','09:30'],
-            ['16:00','21:30']
+            ['06:00','09:30'],
+            ['16:00','21:00']
         ]
     }
 
     /**
-     * validateVehiclePyP Validate if a Vehicle could circulate
+     * validateVehiclePyP Validate if a Vehicle can be on road
      * @param  {Vehicle} vehicle It is an object of Vehicle class
-     * @return {Boolean} If vehicle can circulate or not
+     * @param  {String} date Date in format YYYY-mm-dd
+     * @param  {String} hour Hour in format hh:mm
+     * @return {Boolean} If vehicle can be on road or not
      */
     validateVehiclePyP(vehicle, date, time) {
-        date = new Date(date);
+        let fullDate = `${date} ${time}`;
+        let isAllowedHour = true;
+        let isAllowedDay;
+        let fullDateObj = new Date(fullDate);
 
-        date.setHours(date.getHours() + 5 );
-
-        let is_hour = true;
-
+        // Checks all time restrictions
         for (let i = 0 ; i < this.pyp_schedule.length; i++) {
             if (time >= this.pyp_schedule[i][0] && time <= this.pyp_schedule[i][1]) {
-                is_hour = false;
+                isAllowedHour = false;
                 break;
             }
         }
+        
+        // Checks all day restrictions
+        isAllowedDay = !this.pyp_laws[fullDateObj.getDay()].includes(vehicle.plate.slice(-1));
 
-        return !this.pyp_laws[date.getDay()].includes(vehicle.plate.slice(-1)) || is_hour;
+        return isAllowedDay || isAllowedHour;
     }
 }
 
