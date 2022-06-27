@@ -1,6 +1,6 @@
 # Pico y Placa Project
 
-This project aims to say if a certain vehicle can be on road in a certain date and time. This "Pico y Placa" laws were based on June 2022 rules.
+This project aims to say if a certain vehicle can be on road in a certain date and time. This "Pico y Placa" laws were based on [June 2022 rules](#current-schedule-for-june).
 
 This project has two ways of use it: as an API, or as a Full-Stack project. You will be guided through both forms in the sections bellow.
 
@@ -125,6 +125,23 @@ Example output
     "response": true
 }
 ```
+
+## "Pico y Placa" rules
+
+### Current schedule for June
+"Pico y Placa" works based on the last digit of the vehicle's license plate.
+The following table summarizes the rules that prohibit the circulation of vehicles.
+
+
+| Day         | Last digit | Hours                         |
+| ----------- | ---------  | ----------------------------- |
+| Monday      | 1 and 2    | 06:00 - 09:30 / 16:00 - 21:00 |
+| Tuesday     | 1 and 2    | 06:00 - 09:30 / 16:00 - 21:00 |
+| Wednesday   | 1 and 2    | 06:00 - 09:30 / 16:00 - 21:00 |
+| Thursday    | 1 and 2    | 06:00 - 09:30 / 16:00 - 21:00 |
+| Friday      | 1 and 2    | 06:00 - 09:30 / 16:00 - 21:00 |
+| Saturday    | None       | Does not apply                |
+| Sunday      | None       | Does not apply                |
 
 ## Questions
 
