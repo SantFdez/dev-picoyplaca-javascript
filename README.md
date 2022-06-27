@@ -136,10 +136,10 @@ The following table summarizes the rules that prohibit the circulation of vehicl
 | Day         | Last digit | Hours                         |
 | ----------- | ---------  | ----------------------------- |
 | Monday      | 1 and 2    | 06:00 - 09:30 / 16:00 - 21:00 |
-| Tuesday     | 1 and 2    | 06:00 - 09:30 / 16:00 - 21:00 |
-| Wednesday   | 1 and 2    | 06:00 - 09:30 / 16:00 - 21:00 |
-| Thursday    | 1 and 2    | 06:00 - 09:30 / 16:00 - 21:00 |
-| Friday      | 1 and 2    | 06:00 - 09:30 / 16:00 - 21:00 |
+| Tuesday     | 3 and 4    | 06:00 - 09:30 / 16:00 - 21:00 |
+| Wednesday   | 5 and 6    | 06:00 - 09:30 / 16:00 - 21:00 |
+| Thursday    | 7 and 8    | 06:00 - 09:30 / 16:00 - 21:00 |
+| Friday      | 9 and 0    | 06:00 - 09:30 / 16:00 - 21:00 |
 | Saturday    | None       | Does not apply                |
 | Sunday      | None       | Does not apply                |
 
