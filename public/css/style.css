@@ -1,0 +1,32 @@
+:root {
+    font-family: 'Montserrat Sans', sans-serif;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-success {
+    background-color: #DC135F;
+    border-color: #DC135F;
+    padding: .8rem 0;
+    text-transform: uppercase;
+    border-radius: .8rem;
+    color: white;
+}
+.btn-success:hover {
+    background-color: rgb(184, 5, 73);
+    border-color: rgb(192, 7, 78);
+    color: white;
+}
+
+p, label {
+    font-weight: 600;
+}
+
+.can-circulate {
+    background-color: greenyellow;
+}
+
+.can-not-circulate {
+    background-color: #ff2f2fbf;
+}

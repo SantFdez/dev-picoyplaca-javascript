@@ -1,0 +1,11 @@
+extends ./layout/index
+
+block contenido
+    h2 Vehicle with following information:
+    p=data.vehiclePlate
+    p=data.date
+    p=data.time
+    if response
+        p.can-circulate Can circulate
+    else 
+        p.can-not-circulate Can not circulate
