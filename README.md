@@ -4,6 +4,8 @@ This project aims to say if a certain vehicle can be on road in a certain date a
 
 This project has two ways of use it: as an API, or as a Full-Stack project. You will be guided through both forms in the sections bellow.
 
+This project is deployed at Heroku platform, you will find it [here](https://dev-picoyplaca-javascript.herokuapp.com/)
+
 
 
 ## Understanding data
@@ -64,7 +66,7 @@ Run the application which will be listening on port `4000`.
 
 ### Test Full-Stack App
 
-One you are running the application, you can open the server with any web browser at `localhost:4000` . The App will show you a simple form. Fill the information keeping the established format and see if that specific given vehicle can be on road.
+One you are running the application, you can open the server with any web browser at `localhost:4000` (or deployed at [Heroku](https://dev-picoyplaca-javascript.herokuapp.com/)) . The App will show you a simple form. Fill the information keeping the established format and see if that specific given vehicle can be on road.
 
 
 ## API
